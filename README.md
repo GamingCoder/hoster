@@ -6,4 +6,24 @@ Host.io is a simple modular Host Controller. It can be used to get data like net
 Just the `host.io` libary:  
 	npm install host.io --save  
 If you want to use hostio install it with:  
-npm install host.io -g
+	npm install host.io -g
+
+##Usage
+	hostio --file "path/to/conf.json"
+For example conf files look in examples folder.
+
+###Base Conf-File:
+####Standalone Server without password:
+{
+	"mode": 0,
+	"port": 5555,
+	"password": "",
+	"modules": []
+}
+####Client without password:
+{
+	"mode": 1,
+	"password": "",
+	"host": "wss://echo.websocket.org",
+	"modules": []
+}
