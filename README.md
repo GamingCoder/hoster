@@ -8,7 +8,10 @@ If you want to use hostio install it with:
 
 ##Usage
 
-You can find usage instructions under https://github.com/GamingCoder/host.io/tree/master/docs
+You can find usage instructions under https://github.com/GamingCoder/host.io/tree/master/docs  
+Or go to:
+- [Standalone Use](https://github.com/GamingCoder/host.io/blob/master/docs/standalone.md)
+- [In-App Use](https://github.com/GamingCoder/host.io/blob/master/docs/app.md)
 
 ##Client(1) vs. Server(0)-Mode
 ###Client
