@@ -10,4 +10,16 @@ If you want to use hostio install it with:
 
 You can find usage instructions under https://github.com/GamingCoder/host.io/tree/master/docs
 
+##Client(1) vs. Server(0)-Mode
+###Client
+- + Connect to centralized Server
+	- + Easy to administrate
+	- - Single Point of Failure
+	- - Insecure: Same Password for all clients
+
+###Server
+- + Secure: Random Password
+	- + Secure
+	- - You have to store password on external Server
+
 ##Module-List
