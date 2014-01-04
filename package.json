@@ -1,0 +1,16 @@
+{
+  "name": "host_controller",
+  "version": "0.0.0",
+  "description": "A simple modular host controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobias Meyer",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "~2.1.0",
+    "socket.io": "~0.9.16",
+    "underscore": "~1.5.2"
+  }
+}
