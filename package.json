@@ -2,7 +2,11 @@
   "name": "host_controller",
   "version": "0.0.0",
   "description": "A simple modular host controller",
+  "prefer_global": true,
   "main": "index.js",
+  "bin": {
+    "hostio": "./bin/hcontroller.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
