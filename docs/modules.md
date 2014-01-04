@@ -6,8 +6,8 @@ The host.io module will listen for `data`-Events and will redirect them to the l
 Here the actual `CoffeeScript`-Code for this:
 ```coffeescript
 modules[mod.name].on 'data', (data) ->
-					@emit 'data', {
-						from: mod.name,
-						data: data
-					}
+	@emit 'data', {
+		from: mod.name,
+		data: data
+	}
 ```
