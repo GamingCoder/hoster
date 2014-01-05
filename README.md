@@ -7,6 +7,8 @@ If you want to use hoster install it with:
 ```bash
 $ npm install hoster -g
 ```
+##Commands
+You can find documentation about all commands at the [docs page](https://github.com/GamingCoder/hoster/blob/master/docs/commands.md)
 
 ##Usage
 
