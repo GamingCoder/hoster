@@ -3,9 +3,8 @@
 Hoster is a simple modular Host Controller. It can be used to get data like network usage, cpu and ram stats and many other things. You can also use it to control the host its running on.
 
 ##Install
-If you want to use hoster install it with:  
 ```bash
-$ npm install hoster -g
+$ npm install hoster
 ```
 ##Commands
 You can find documentation about all commands at the [docs page](https://github.com/GamingCoder/hoster/blob/master/docs/commands.md)
