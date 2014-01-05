@@ -30,8 +30,6 @@ module.exports = class Ctrl extends EventEmitter
 			console.log "WebSocketServer running on Port %d", @opts.port
 			io.sockets.on 'connection', (socket) ->
 				socket.on 'auth', (data) ->
-					console.log typeof password
-					console.log password
 					if data is password
 						console.log "Client authorized"
 						socket.emit 'auth', true
