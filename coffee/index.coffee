@@ -29,17 +29,16 @@ module.exports = class Ctrl extends EventEmitter
 			io = require('socket.io').listen @opts.port
 			console.log "WebSocketServer running on Port %d", @opts.port
 			io.sockets.on 'connection', (socket) ->
-				socket.set 'auth', false, ->
-				socket.on 'set auth', (auth) -> socket.emit 'auth', {'auth': auth}
 				socket.on 'auth', (data) ->
+					console.log typeof password
+					console.log password
 					if data is password
-						socket.set 'auth', true, ->
 						console.log "Client authorized"
-					else socket.set 'auth', false, ->
-				@on 'data', (data) ->
-					socket.get 'auth', (err, auth) ->
-						throw err if err
-						socket.emit 'data', data if auth is true
+						socket.emit 'auth', true
+						@on 'data', (data) -> socket.emit 'data'
+					else
+						console.log "Client-Auth failed"
+						socket.emit 'auth', false
 
 		#Spawn modules
 		modules = {}
