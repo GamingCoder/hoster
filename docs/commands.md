@@ -13,7 +13,7 @@ $ hoster -f /path/to/config.json -p "password"
 It just dumps all messages it gets to the console.  
 Good for testing :)
 ```bash
-$ hosterccat -h "ws://hosterIP" -p "password"
+$ hosterccat -h "http://hosterIP" -p "password"
 ```
 ###Options
 - -h --host: This option accepts the URI of a `hoster`-Instance
