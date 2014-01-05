@@ -8,7 +8,7 @@ $ npm install hoster -g
 ###Server
 Start the Server by typing:
 ```bash
-$ hoster -f /path/to/conf.json
+$ hoster -f /path/to/conf.json -p password
 ```
 
 ####Conf File
