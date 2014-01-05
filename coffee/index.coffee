@@ -23,6 +23,7 @@ module.exports = class Ctrl extends EventEmitter
 				thow new Error 'Lost Connection'
 		else
 			@opts.mode = 0
+			password = @opts.password
 
 			#Server code
 			io = require('socket.io').listen @opts.port
@@ -31,8 +32,9 @@ module.exports = class Ctrl extends EventEmitter
 				socket.set 'auth', false, ->
 				socket.on 'set auth', (auth) -> socket.emit 'auth', {'auth': auth}
 				socket.on 'auth', (data) ->
-					if data is @opts.password
-					then socket.set 'auth', true, ->
+					if data is password
+						socket.set 'auth', true, ->
+						console.log "Client authorized"
 					else socket.set 'auth', false, ->
 				@on 'data', (data) ->
 					socket.get 'auth', (err, auth) ->

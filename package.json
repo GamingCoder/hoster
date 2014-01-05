@@ -5,10 +5,12 @@
   "prefer_global": true,
   "main": "index.js",
   "bin": {
-    "hostio": "./bin/hcontroller.js"
+    "hoster": "./bin/hcontroller.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "coffee -o . -c coffee",
+    "build": "coffee -o . -c coffee"
   },
   "author": "Tobias Meyer",
   "license": "MIT",
@@ -16,5 +18,9 @@
     "commander": "~2.1.0",
     "socket.io": "~0.9.16",
     "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "should": "~2.1.1",
+    "mocha": "~1.16.2"
   }
 }
