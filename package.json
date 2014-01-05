@@ -1,6 +1,6 @@
 {
-  "name": "host_controller",
-  "version": "0.0.0",
+  "name": "hoster",
+  "version": "0.0.1",
   "description": "A simple modular host controller",
   "prefer_global": true,
   "main": "index.js",

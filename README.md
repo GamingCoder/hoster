@@ -1,17 +1,17 @@
-#Host.io
+#Hoster
 ##What is that?
-Host.io is a simple modular Host Controller. It can be used to get data like network usage, cpu and ram stats and many other things. You can also use it to control the host its running on.
+Hoster is a simple modular Host Controller. It can be used to get data like network usage, cpu and ram stats and many other things. You can also use it to control the host its running on.
 
 ##Install
 If you want to use hostio install it with:  
-	npm install host.io -g
+	npm install hoster -g
 
 ##Usage
 
-You can find usage instructions under https://github.com/GamingCoder/host.io/tree/master/docs  
+You can find usage instructions under https://github.com/GamingCoder/hoster/tree/master/docs  
 Or go to:
-- [Standalone Use](https://github.com/GamingCoder/host.io/blob/master/docs/standalone.md)
-- [In-App Use](https://github.com/GamingCoder/host.io/blob/master/docs/app.md)
+- [Standalone Use](https://github.com/GamingCoder/hoster/blob/master/docs/standalone.md)
+- [In-App Use](https://github.com/GamingCoder/hoster/blob/master/docs/app.md)
 
 ##Client(1) vs. Server(0)-Mode
 ###Client

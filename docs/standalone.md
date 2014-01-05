@@ -1,14 +1,14 @@
 #Standalon Usage
 ## Install
-In order to use `hostio` install it globally:
+In order to use `hoster` install it globally:
 ```bash
-$ npm install host.io -g
+$ npm install hoster -g
 ```
 ##Usage
 ###Server
 Start the Server by typing:
 ```bash
-$ hostio -f /path/to/conf.json
+$ hoster -f /path/to/conf.json
 ```
 
 ####Conf File
