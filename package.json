@@ -8,7 +8,7 @@
     "hoster": "./bin/hcontroller.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha",
     "prepublish": "./node_modules/.bin/coffee -o . -c coffee",
     "build": "./node_modules/.bin/coffee -o . -c coffee"
   },
