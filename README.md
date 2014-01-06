@@ -1,4 +1,4 @@
-#Hoster ![travis](https://travis-ci.org/GamingCoder/hoster.png)
+#Hoster ![travis](https://travis-ci.org/GamingCoder/hoster.png?branch=master)
 ##What is that?
 Hoster is a simple modular Host Controller. It can be used to get data like network usage, cpu and ram stats and many other things. You can also use it to control the host its running on.
 
