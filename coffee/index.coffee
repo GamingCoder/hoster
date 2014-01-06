@@ -7,7 +7,6 @@ module.exports = class Ctrl extends EventEmitter
 		@opts.port = parseInt @opts.port ?= 5555
 		@opts.password ?= ""
 		@opts.mode = parseInt @opts.mode
-		console.log typeof @opts.modules
 		@opts.modules ?= []
 		if typeof @opts.modules is not Array
 			@opts.modules = []
@@ -26,16 +25,13 @@ module.exports = class Ctrl extends EventEmitter
 			password = @opts.password
 
 			#Server code
-			io = require('socket.io').listen @opts.port
-			console.log "WebSocketServer running on Port %d", @opts.port
+			io = require('socket.io').listen @opts.port, {log: false}
 			io.sockets.on 'connection', (socket) ->
 				socket.on 'auth', (data) ->
 					if data is password
-						console.log "Client authorized"
 						socket.emit 'auth', true
 						@on 'data', (data) -> socket.emit 'data'
 					else
-						console.log "Client-Auth failed"
 						socket.emit 'auth', false
 
 		#Spawn modules
@@ -49,6 +45,5 @@ module.exports = class Ctrl extends EventEmitter
 						from: mod.name,
 						data: data
 					}
-				console.log 'Loaded module %s', mod.name
 			else
 				console.log 'Could not load module %s from path %s', mod.name, mod.path

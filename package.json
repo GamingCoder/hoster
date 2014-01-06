@@ -9,18 +9,20 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "coffee -o . -c coffee",
-    "build": "coffee -o . -c coffee"
+    "prepublish": "./node_modules/.bin/coffee -o . -c coffee",
+    "build": "./node_modules/.bin/coffee -o . -c coffee"
   },
   "author": "Tobias Meyer",
   "license": "MIT",
   "dependencies": {
     "commander": "~2.1.0",
     "socket.io": "~0.9.16",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "coffee-script": "~1.6.3"
   },
   "devDependencies": {
     "should": "~2.1.1",
-    "mocha": "~1.16.2"
+    "mocha": "~1.16.2",
+    "chai": "~1.8.1"
   }
 }
